@@ -1,0 +1,120 @@
+.header{
+    display:flex;
+    justify-content:end;
+    background-color: #8b5cf6;
+   color:white;
+   margin-top:-7px;
+}
+.header > a{
+    padding-right:150px;
+    text-decoration: none;
+    color:white
+}
+img{
+    height:15rem;
+    margin-left:37%;
+    margin-top:50px;
+
+}
+span{
+    color:#8b5cf6;
+  
+}
+.name{
+    padding-left: 34%;
+    font-size: 30px;
+}
+.technology{
+  
+    background-color: #ede9fe;
+}
+.technology > h1{
+    padding-left: 45%;
+   
+}
+.technology > h1{
+    padding-top: 20px;
+}
+.technology > div{
+    padding-bottom: 20px;
+    padding-left: 33%;
+    font-size: 20px;
+}
+.projects{
+    text-align: center;
+  
+}
+.projects > div{
+    font-size: 20px;
+    padding-top:-10px;
+    padding-bottom:10px;
+}
+button{
+    width:8rem;
+    height:2.5rem;
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    color:white
+}
+.blog{
+    text-align: center;
+    background-color: #ede9fe;
+}
+.blog > h1{
+    padding-top: 10px;
+}
+
+.blog> div{
+    font-size: 20px;
+    padding-top:-10px;
+    padding-bottom:10px;
+}
+button{
+    width:8rem;
+    height:2.5rem;
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    border-radius: 5px;
+    color:white;
+    margin-bottom: 10px;
+}
+.footer{
+    background-color:#8b5cf6;
+    text-align: center;
+    color:white;
+}
+.footer > div{
+    display:flex;
+    justify-content: center;
+    
+}
+.footer > div > div{
+    padding-right:30px;
+    padding-bottom: 20px;
+}
+.read{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:50px;
+    margin-right: 50px;
+    padding:20px
+}
+.read > p{
+    font-size: 18px;
+}
+.blog-head{
+    text-align: center;
+}
+.read >a{
+     margin-left:43%;
+}
+.blog-header{
+    text-align: center;
+    font-size: 40px;
+}
+.social-handles > a{
+    text-decoration: none;
+    color:white;
+    padding-right:20px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}

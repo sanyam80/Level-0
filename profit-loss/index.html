@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <style>
+        .container{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+            margin-top:-7px;
+        }
+        input,label{
+            display: block;
+            margin:auto;
+            padding:10px;
+        }
+        button{
+            margin-top:20px;
+            width:12rem;
+            height:2rem;
+        }
+        #output-box{
+            padding-top: 20px;
+            font-weight: 600;
+            color:red;
+            font-size: 25px;
+        }
+        label{
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mark-14 Stocks</h1>
+    <div class = "container">
+        <label>Initial Price</label>
+        <input id = "initial-price" type = "number" placeholder="Enter Initial Price"/>
+        <label>Quantity Of Stocks</label>
+        <input id = "qty-of-stocks" type = "number" placeholder = "Enter the number of stocks" />
+        <label>Current Price</label>
+        <input id = "current-price" type = "number" placeholder = "Enter the current price of stocks" />
+        <button id = "submit-btn">Tell Me</button>
+        <div id = "output-box"></div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

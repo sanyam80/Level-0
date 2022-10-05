@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Is Birthday Palindrome</title>
+    <style>
+       
+
+
+body {
+    
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-left:200px;
+    margin-right:200px;
+}
+
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+
+    border: 3px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content{
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem 2rem 3rem 5rem;
+}
+
+.content p{
+    text-align: left;
+}
+
+
+.container input{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    width: 55%;
+    font-size: large;
+}
+
+#btn-check{
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#output1 {
+    text-align: center;
+    max-width: 55%;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    display: none;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px 1px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h2 style="text-align: left;">Check if your birthdate is palindrome.</h2>
+        <p>A palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam<br><br>
+          This app checks your birthdate in 6 formats dd-mm-yyyy,<br>mm-dd-yyyy,yyyy-mm-dd,dd-mm-yy,mm-dd-yy,yy-mm-dd.
+          So if your birthdate is 4 Aug 2000, then app will check for 04082000, 08042000, 20000804, 040800,080400,000804.<br><br>If any one of the above format is palindrome then it shows the birthdate is palindrome or else it will show how many days you have missed to palindrome date form your birthdate.</p>
+        <h3 style="text-align: left;">Enter the Birthdate:</h3>
+        <input type="date" id="input">
+        <br>
+        <button id="btn-check">check</button>
+        <br>
+        <p id="output1"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

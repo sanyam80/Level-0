@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Triangle</title>
+    <style>
+          #navbar{
+        display:flex;
+       justify-content: space-around;
+       background-color: aqua;
+      }
+      a{
+        text-decoration: none;
+      }
+      #content{
+        text-align: center;
+        padding-top: 20px;
+      }
+      label,input{
+        display:block;
+        padding-top: 5px;
+      }
+      input{
+        margin:auto;
+        margin-bottom: 5px;
+      }
+      button{
+        margin-top: 10px;
+      }
+      #content h2{
+        border:1px solid black;
+        margin-left:200px;
+        margin-right:200px;
+        padding:10px
+      }
+      #output{
+        padding-top: 20px;
+        color:red;
+        font-weight: 600;
+        font-size: 25px;
+      }
+    </style>
+</head>
+<body>
+    <div id = "navbar"> 
+        <a href = "index.html"><h1>Is Triangle?</h1></a>
+        <a href = "quiz.html"><h1>Quiz</h1></a>
+        <a href = "hypotenuse.html"><h1>Hypotenuse</h1></a>
+        <a href = "area.html"><h1>Area</h1></a>
+      </div>
+      <div id = "content">
+    <h1>Check Area Of Triangle</h1>
+    <h2>Area of Triangle = 1/2 * Base * Height</h2>
+    <label>Base(in cm)</label>
+    <input class = "side-input" type = "number" />
+    <label>Height(in cm)</label>
+    <input class = "side-input" type = "number" />
+    <button id = "submit-btn">Check Area</button>
+    <div id = "output"></div>
+    </div>
+    <script src = "area.js"></script>
+</body>
+</html>

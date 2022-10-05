@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <style>
+        textarea{
+            width:80%;
+            height:5rem;
+            display: block;
+        }
+        #output{
+            border:1px solid black;
+            width:80%;
+            height:5rem;
+            
+        }
+        h1{
+            text-align:center;
+            background-color: aqua;
+            padding:20px;
+             margin-top:-8px;
+        }
+        textarea,#output{
+            margin-left:10%;
+        }
+        #txt{
+            text-align:center;
+            padding-top: 20px;
+        }
+        button{
+            margin-left:45%;
+            width:8rem;
+            height:2rem;
+            margin-top: 10px;
+            background-color: aqua;
+            border-color: aqua;
+            color:black;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fun Translation App</h1>
+    <textarea id = "txt-input" placeholder = "Put your sentence here in english, we will conver into banana"></textarea>
+    <button id = "btn-translate">Translate</button>
+    <div id = "txt"style = "font-size: larger">Output will come below</div>
+    <div id = "output"></div>
+    <script src = "script.js"></script>
+</body>
+</html>
