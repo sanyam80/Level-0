@@ -131,3 +131,13 @@ button{
 .color{
     background-color:#ede9fe;
 }
+.color > p{
+    font-size: 20px;
+    padding-left:40px;
+    padding-right:40px;
+}
+.color1 > p{
+    font-size: 20px;
+    padding-left:40px;
+    padding-right:40px;
+}
