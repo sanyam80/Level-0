@@ -118,3 +118,16 @@ button{
     font-size: 20px;
     padding-bottom: 10px;
 }
+.main{
+    text-align: center;
+}
+.p{
+    text-align: center;
+    font-size: 45px;
+}
+.main > div > p{
+    font-size: 20px;
+}
+.color{
+    background-color:#ede9fe;
+}
