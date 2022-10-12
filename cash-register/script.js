@@ -11,6 +11,7 @@ function validateBillAmount(){
 if(billAmount.value>0){
   if(cashGiven.value>billAmount.value){
    const amountToReturn = cashGiven.value-billAmount.value;
+   message.innerText = "The remaining cash to be given is " + "Rs " +amountToReturn
    calculateChange(amountToReturn)
   }else{
   message.innerText = "The cash provided should be greater than bill amount"

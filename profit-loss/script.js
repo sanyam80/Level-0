@@ -21,11 +21,10 @@ function calculateProfitAndLoss(ip,qp,cp){
 
     }else if(cp>ip){
       var profit = (cp-ip)*qp;
-      var profitPercent = (profit/cp)*100;
+      var profitPercent = (profit/ip)*100;
       outputBox.innerText = (`Hey the profit is ${profit} and the profit percentage is ${profitPercent}%`)
 
     }else{
         outputBox.innerText = "No Pain No Gain ! No Gain and No Pain"
     }
 }
-

@@ -3,7 +3,7 @@ const submitAnswerBtn = document.querySelector("#submit-answer-btn");
 const output = document.querySelector("#output");
 
 
-const correctAnswers = ["90","right angle"];
+const correctAnswers = ["90","right angle","1/2*Base*Height","100cm","Acute Angle"];
 
 submitAnswerBtn.addEventListener("click",calculateScore);
 function calculateScore(){
@@ -11,7 +11,7 @@ function calculateScore(){
   let index = 0;
   const formResults = new FormData(quizForm);
   for(var value of formResults.values()){
-       if(value===correctAnswers[index]){
+       if(value==correctAnswers[index]){
         score = score + 1;
        }
        index = index + 1;  }
