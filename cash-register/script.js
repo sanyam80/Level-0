@@ -1,31 +1,70 @@
-const billAmount = document.querySelector("#bill-amount");
-const cashGiven = document.querySelector("#cash-given");
-const checkButton = document.querySelector("#check-button");
-const message = document.querySelector("#error-message");
-const noOfNotes = document.querySelectorAll(".no-of-notes")
-const availableNotes = [2000,500,100,20,10,5,1]
-checkButton.addEventListener("click",validateBillAmount);
+const billAmt = document.querySelector("#billAmt");
+const nextBtn = document.querySelector("#next");
 
-function validateBillAmount(){
+const cashDiv = document.querySelector(".cashEnter");
+const cashGiven = document.querySelector("#amtGiven");
+const chk = document.querySelector("#check");
+const message = document.querySelector("#message");
+
+const outputDiv = document.querySelector(".outputEnter");
+const outputDis = document.querySelectorAll(".notesDisplay");
+
+const notes = [2000, 500, 100, 20, 10, 5, 1];
+
+chk.addEventListener("click", function validatingCashAndBillamt() {
+  hidemessage();
+  outputDiv.style.display = "block";
+  if(Number(billAmt.value)>0 && Number(cashGiven.value)>0){
+    
+    if (Number(cashGiven.value) < Number(billAmt.value)) {
+      showMessage("The cash amount should be atleast equal to bill amount");
+      return;
+    }
+    const amountReturn = Number(cashGiven.value) - Number(billAmt.value);
+    calculateChange(amountReturn);
+  }
+
+  else{
+    showMessage("Please enter the valid amount");
+  }
   
-if(billAmount.value>0){
-  if(cashGiven.value>billAmount.value){
-   const amountToReturn = cashGiven.value-billAmount.value;
-   message.innerText = "The remaining cash to be given is " + "Rs " +amountToReturn
-   calculateChange(amountToReturn)
-  }else{
-  message.innerText = "The cash provided should be greater than bill amount"
+
+});
+
+//calculating the changes
+
+function calculateChange(amountReturn) {
+  for (let i = 0; i < notes.length; i++) {
+    const no_of_notes = Math.trunc(amountReturn / notes[i]);
+    amountReturn %= notes[i];
+    outputDis[i].innerText = no_of_notes;
   }
-}else{
-    message.style.display = "block"
-    message.innerText = "The bill amount should be greater than 0";
-}
+  console.log(no_of_notes)
 }
 
-function calculateChange(amountToReturn){
-  for(var i = 0;i<availableNotes.length;i++){
-    const numberOfNotes = Math.trunc(amountToReturn/availableNotes[i]);
-    amountToReturn%=availableNotes[i];
-    noOfNotes[i].innerText = numberOfNotes;
-  }
+// hidding the error message at first
+function hidemessage() {
+  message.style.display = "none";
 }
+
+// error message display function
+function showMessage(msg) {
+  outputDiv.style.display="none"
+  message.style.display = "block";
+  message.innerText = msg;
+}
+
+
+// next button hide
+
+outputDiv.style.display = "none";
+cashDiv.style.display = "none";
+nextBtn.addEventListener("click", () => {
+  hidemessage();
+  if (Number(billAmt.value) > 0) {
+    nextBtn.style.display = "none";
+    cashDiv.style.display = "block";
+  } else {
+    showMessage("Enter valid bill amount");
+  }
+});
